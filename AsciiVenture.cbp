@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AsciiVenture" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_620" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AsciiVenture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="minggw_62" />
+				<Compiler>
+					<Add directory="." />
+					<Add directory="./SDL-1.2.15/include" />
+					<Add directory="SDL-1.2.15/include/SDL" />
+				</Compiler>
+				<Linker>
+					<Add option="-mwindows -lpdcurses -lgdi32 -lcomdlg32 -lmingw32 -lSDLmain -lSDL -mwindows -lm -luser32 -lgdi32 -lwinmm -ldxguid" />
+					<Add directory="./libs" />
+					<Add directory="libs" />
+				</Linker>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AsciiVenture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_620" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="./SDL-1.2.15/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-mwindows -lpdcurses -lgdi32 -lcomdlg32 -lmingw32 -lSDLmain -lSDL -mwindows -lm -luser32 -lgdi32 -lwinmm -ldxguid -static-libgcc" />
+			<Add directory="./libs" />
+		</Linker>
+		<Unit filename="curses.h" />
+		<Unit filename="globals.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="map.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="map.h" />
+		<Unit filename="player.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="player.h" />
+		<Unit filename="read_tile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="read_tile.h" />
+		<Unit filename="tile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tile.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
